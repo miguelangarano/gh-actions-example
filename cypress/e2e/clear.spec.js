@@ -6,6 +6,7 @@ context("Clear completed button", function () {
   beforeEach(function () {
     cy.createDefaultTodos().as("todos");
     console.log("HOLA")
+    cy.contains("Sorry, something went wrong").should('not.exist')
   });
 
   it(
