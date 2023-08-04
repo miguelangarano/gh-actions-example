@@ -4,7 +4,7 @@ let TODO_ITEM_THREE = "book a doctors appointment";
 
 context("Counter", function () {
   it("should display the current number of todo items", function () {
-    throw new Error("FAIL HERE")
+    throw new Error("FAIL HERE 1")
     cy.contains("Sorry, something went wrong").should('not.exist')
     cy.createTodo(TODO_ITEM_ONE);
     cy.get(".todo-count").contains("1 item left");
