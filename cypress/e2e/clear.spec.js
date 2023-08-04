@@ -41,5 +41,6 @@ context("Clear completed button", function () {
     cy.get(".clear-completed").should("be.visible").click();
 
     cy.get(".clear-completed").should("not.be.visible");
+    cy.get(".clear-completed").should("be.visible");
   });
 });
