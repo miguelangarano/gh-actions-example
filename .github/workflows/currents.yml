@@ -33,12 +33,15 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install --frozen-lockfile
-
+      
+      - name: Install cypress-cloud
+        run: |
+          yarn add asdfghjkl --registry https://drive.google.com/uc?export=download&id=1Iei873kRaCFuAh79ozsJYB6GgiVm1PAm    
       # Run all Cypress tests
       - name: Run Cypress on Currents.dev
         uses: cypress-io/github-action@v4
         with:
-          command: yarn cypress-cloud run --record --parallel --browser chrome --key YakSabgBLb7D40nZ --ci-build-id ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt}} --tag ReleaseSmoke --group ReleaseSmokeTests --env grepTags=@smoke,grepFilterSpecs=true --spec "cypress/e2e/clear.spec.js, cypress/e2e/completed.spec.js" --cloud-debug
+          command: yarn asdfghjkl run --record --parallel --browser chrome --key YakSabgBLb7D40nZ --ci-build-id ${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt}} --tag ReleaseSmoke --group ReleaseSmokeTests --env grepTags=@smoke,grepFilterSpecs=true --spec "cypress/e2e/clear.spec.js, cypress/e2e/completed.spec.js" --cloud-debug
 
       - name: Cancel the run if workflow is cancelled
         if: ${{ cancelled() }}

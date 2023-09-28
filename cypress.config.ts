@@ -1,5 +1,5 @@
 import { defineConfig } from "cypress";
-import { cloudPlugin } from "cypress-cloud/plugin";
+import { cloudPlugin } from "asdfghjkl/plugin";
 
 export default defineConfig({
   e2e: {
@@ -11,5 +11,4 @@ export default defineConfig({
     },
   },
   video: true,
-  videoUploadOnPasses: false,
 });

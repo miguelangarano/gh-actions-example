@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "asdfghjkl": "file:asdfghjkl",
     "cypress": "13.3.0",
-    "cypress-cloud": "2.0.0-beta.1",
     "nock": "^13.3.3",
     "typescript": "^5.0.2"
   }
