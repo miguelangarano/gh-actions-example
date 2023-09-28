@@ -11,6 +11,11 @@ jobs:
       matrix:
         # run 3 copies of the current job in parallel
         containers: [1, 2, 3]
+
+    env:
+      HTTP_PROXY: http://my-proxy-server
+      HTTPS_PROXY: http://my-proxy-server
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
