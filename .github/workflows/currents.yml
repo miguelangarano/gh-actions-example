@@ -13,8 +13,8 @@ jobs:
         containers: [1, 2, 3]
 
     env:
-      HTTP_PROXY: http://my-proxy-server
-      HTTPS_PROXY: http://my-proxy-server
+      HTTP_PROXY: http://146.190.168.238:3128
+      HTTPS_PROXY: http://146.190.168.238:3128
 
     steps:
       - name: Checkout
