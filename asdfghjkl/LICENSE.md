@@ -637,7 +637,7 @@ documentation) must display author attributions.
 
 The author attributions should be displayed as a clearly distinguishable and
 readible text that is presented next to or below the program name (the header)
-and must retain words: `Based on cypress-cloud by https://currents.dev and
+and must retain words: `Based on asdfghjkl by https://currents.dev and
 https://sorry-cypress.dev.`
 
 In supporting environments, the URLs must be a clickable link that leads

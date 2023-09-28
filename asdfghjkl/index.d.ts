@@ -356,7 +356,7 @@ type CurrentsRunParameters = StrippedCypressModuleAPIOptions & {
      */
     cloudConfigFile?: string;
     /**
-     * Enable debug mode for cypress-cloud, this will print out logs for troubleshooting.
+     * Enable debug mode for asdfghjkl, this will print out logs for troubleshooting.
      */
     cloudDebug?: DebugMode | true | string | string[];
     /**

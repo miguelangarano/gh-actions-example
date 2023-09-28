@@ -169,7 +169,7 @@ var setCurrentsVersion = (v) => {
 
 // lib/init.ts
 var cypressPkg = require2("cypress/package.json");
-var pkg = require2("cypress-cloud/package.json");
+var pkg = require2("asdfghjkl/package.json");
 initCapture();
 setCypressVersion(cypressPkg.version);
 setCurrentsVersion(pkg.version);
@@ -184,7 +184,7 @@ Copyright (C) ${(/* @__PURE__ */ new Date()).getFullYear()} Currents Software In
 This is free software, and you are welcome to redistribute it under certain
 conditions. This program comes with no warranty. Parts of this program are MIT
 licensed. Refer to the license for details
-https://github.com/currents-dev/cypress-cloud/blob/main/LICENSE.md
+https://github.com/currents-dev/asdfghjkl/blob/main/LICENSE.md
 `;
 }
 
@@ -405,7 +405,7 @@ var bootCypress = async (params) => {
   try {
     const f = fs.readFileSync(tempFilePath, "utf-8");
     if (!f) {
-      throw new Error("Is cypress-cloud/plugin installed?");
+      throw new Error("Is asdfghjkl/plugin installed?");
     }
     debug5("cypress config '%s': '%s'", tempFilePath, f);
     return JSON.parse(f);
@@ -414,7 +414,7 @@ var bootCypress = async (params) => {
     info(bold("Cypress stdout:\n"), stdout2);
     info(bold("Cypress stderr:\n"), stderr);
     throw new ValidationError(`Unable to resolve cypress configuration
-- make sure that 'cypress-cloud/plugin' is installed
+- make sure that 'asdfghjkl/plugin' is installed
 - report the issue together with cypress stdout and stderr
 `);
   }
@@ -746,7 +746,7 @@ async function getClient() {
       "x-cypress-request-attempt": config["axios-retry"]?.retryCount ?? 0,
       "x-cypress-version": _cypressVersion ?? "0.0.0",
       "x-ccy-version": ccyVerson,
-      "User-Agent": `cypress-cloud/${ccyVerson}`
+      "User-Agent": `asdfghjkl/${ccyVerson}`
     };
     if (_runId) {
       headers["x-cypress-run-id"] = _runId;
@@ -1567,7 +1567,7 @@ var SpecAfterResult = class _SpecAfterResult {
   static getDummyTestAttemptError(attemptState) {
     return match4(attemptState).with("failed", () => ({
       name: "Error",
-      message: "[cypress-cloud] Could not get cypress attempt error details",
+      message: "[asdfghjkl] Could not get cypress attempt error details",
       stack: "",
       codeFrame: null
     })).with("skipped", () => ({
@@ -3370,7 +3370,7 @@ async function run(params = {}) {
     config,
     browser: validatedParams.browser
   });
-  info(`Cypress-cloud version: ${dim(_currentsVersion)}`);
+  info(`asdfghjkl version: ${dim(_currentsVersion)}`);
   info(`Cypress version: ${dim(_cypressVersion)}`);
   info("Discovered %d spec files", specs.length);
   info(

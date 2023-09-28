@@ -3562,7 +3562,7 @@ async function run(params = {}) {
     config,
     browser: validatedParams.browser
   });
-  info(`Cypress-cloud version: ${dim(_currentsVersion)}`);
+  info(`asdfghjkl version: ${dim(_currentsVersion)}`);
   info(`Cypress version: ${dim(_cypressVersion)}`);
   info("Discovered %d spec files", specs.length);
   info(

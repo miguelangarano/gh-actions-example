@@ -3,9 +3,9 @@
   "version": "2.0.0-beta.1",
   "main": "./index.js",
   "author": "Currents Software Inc",
-  "homepage": "https://github.com/currents-dev/cypress-cloud",
+  "homepage": "https://github.com/currents-dev/asdfghjkl",
   "bugs": {
-    "url": "https://github.com/currents-dev/cypress-cloud/issues",
+    "url": "https://github.com/currents-dev/asdfghjkl/issues",
     "email": "support@currents.dev"
   },
   "license": "GPL-3.0-or-later",
@@ -17,7 +17,7 @@
     "sorry-cypress",
     "ci",
     "e2e",
-    "cypress-cloud"
+    "asdfghjkl"
   ],
   "scripts": {
     "rm": "rimraf out",

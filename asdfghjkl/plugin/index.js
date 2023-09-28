@@ -83,7 +83,7 @@ async function cloudPlugin(on, config) {
     warn(
       `Currents plugin is not installed properly - missing required variables in ${dim(
         "cypress.env"
-      )}. Please refer to: https://github.com/currents-dev/cypress-cloud#setup-with-existing-plugins`
+      )}. Please refer to: https://github.com/currents-dev/asdfghjkl#setup-with-existing-plugins`
     );
   }
   let ws = null;
