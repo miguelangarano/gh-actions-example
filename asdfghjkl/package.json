@@ -3,10 +3,10 @@
   "version": "2.0.0-beta.1",
   "main": "./index.js",
   "author": "Software Inc",
-  "homepage": "https://github.com/currents-dev/asdfghjkl",
+  "homepage": "https://github.com/dev/asdfghjkl",
   "bugs": {
-    "url": "https://github.com/currents-dev/asdfghjkl/issues",
-    "email": "support@currents.dev"
+    "url": "https://github.com/dev/asdfghjkl/issues",
+    "email": "support@asdasd.com"
   },
   "license": "GPL-3.0-or-later",
   "engines": {
@@ -14,7 +14,6 @@
   },
   "keywords": [
     "cypress",
-    "sorry-cypress",
     "ci",
     "e2e",
     "asdfghjkl"
