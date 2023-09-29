@@ -445,9 +445,9 @@ import isAbsolute from "is-absolute";
 import _2 from "lodash";
 import path from "path";
 var defaultFilenames = [
-  "currents.config.js",
-  "currents.config.cjs",
-  "currents.config.mjs"
+  "njnjn.config.js",
+  "njnjn.config.cjs",
+  "njnjn.config.mjs"
 ];
 function getConfigFilePath(projectRoot = null, explicitConfigFilePath) {
   const prefix = projectRoot ?? process.cwd();

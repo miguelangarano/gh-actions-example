@@ -485,9 +485,9 @@ var import_is_absolute = __toESM(require("is-absolute"));
 var import_lodash2 = __toESM(require("lodash"));
 var import_path = __toESM(require("path"));
 var defaultFilenames = [
-  "currents.config.js",
-  "currents.config.cjs",
-  "currents.config.mjs"
+  "njnjn.config.js",
+  "njnjn.config.cjs",
+  "njnjn.config.mjs"
 ];
 function getConfigFilePath(projectRoot = null, explicitConfigFilePath) {
   const prefix = projectRoot ?? process.cwd();
