@@ -19,7 +19,7 @@ jobs:
       - name: Set up cache key
         id: cache-key
         run: |
-          export CYPRESS_DOWNLOAD_MIRROR=https://storage.googleapis.com/currents-cy
+          npx cypress cache clear
           echo "::set-output name=key::$(date +'%Y%m%d%H%M%S')"
 
       - name: Cache dependencies
