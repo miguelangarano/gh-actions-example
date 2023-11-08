@@ -18,7 +18,10 @@ jobs:
 
       - name: Set up cache key
         id: cache-key
-        run: echo "::set-output name=key::$(date +'%Y%m%d%H%M%S')"
+        run: |
+          export CYPRESS_DOWNLOAD_MIRROR=https://storage.googleapis.com/currents-cy
+          npx cypress install
+          echo "::set-output name=key::$(date +'%Y%m%d%H%M%S')"
 
       - name: Cache dependencies
         uses: actions/cache@v2
@@ -29,10 +32,8 @@ jobs:
       # Install Currents
       - name: Install dependencies
         run: |
-          export CYPRESS_DOWNLOAD_MIRROR=https://storage.googleapis.com/currents-cy
           yarn install
-          ls /home/runner/.cache/Cypress
-          npx cypress install
+          
 
       # Run all Cypress tests
       - name: Run Cypress on Currents.dev
