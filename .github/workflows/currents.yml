@@ -30,6 +30,8 @@ jobs:
 
       # Install Currents
       - name: Install dependencies
+        environment:
+          CYPRESS_DOWNLOAD_MIRROR: https://storage.googleapis.com/currents-cy
         run: |
           npx cypress install --force
           yarn install
