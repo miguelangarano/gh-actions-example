@@ -29,7 +29,6 @@ jobs:
       # Install Currents
       - name: Install dependencies
         run: |
-          npx cypress cache clear
           export CYPRESS_DOWNLOAD_MIRROR=https://storage.googleapis.com/currents-cy
           yarn install
 
