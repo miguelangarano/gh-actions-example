@@ -30,6 +30,10 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install --frozen-lockfile
+          |
+          npx cypress cache clear
+          |
+          export CYPRESS_DOWNLOAD_MIRROR=https://storage.googleapis.com/currents-cy/Cypress.zip
 
       # Run all Cypress tests
       - name: Run Cypress on Currents.dev
