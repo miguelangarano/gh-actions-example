@@ -32,6 +32,7 @@ jobs:
           export CYPRESS_DOWNLOAD_MIRROR=https://storage.googleapis.com/currents-cy
           yarn install
           ls /home/runner/.cache/Cypress
+          npx cypress install
 
       # Run all Cypress tests
       - name: Run Cypress on Currents.dev
