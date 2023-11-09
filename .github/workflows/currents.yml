@@ -18,6 +18,8 @@ jobs:
 
       - name: Clear cache
         id: cache-clear
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           gh cache delete --all
 
