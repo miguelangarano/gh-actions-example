@@ -19,7 +19,6 @@ jobs:
       - name: Set up cache key
         id: cache-key
         run: |
-          npx cypress cache clear
           echo "::set-output name=key::$(date +'%Y%m%d%H%M%S')"
 
       - name: Cache dependencies
@@ -34,6 +33,7 @@ jobs:
           CYPRESS_DOWNLOAD_MIRROR: https://storage.googleapis.com/currents-cy
         run: |
           npm install
+          npx cypress cache clear
           npx cypress install --force
 
       # Run all Cypress tests
