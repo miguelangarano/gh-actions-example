@@ -16,16 +16,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up cache key
-        id: cache-key
+      - name: Clear cache
+        id: cache-clear
         run: |
-          echo "::set-output name=key::$(date +'%Y%m%d%H%M%S')"
-
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        with:
-          path: path/to/dependencies
-          key: ${{ steps.cache-key.outputs.key }}
+          gh cache delete --all
 
       # Install Currents
       - name: Install dependencies
