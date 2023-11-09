@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "asdfghjkl": "file:asdfghjkl",
-    "cypress": "13.3.0",
+    "cypress": "13.5.0",
     "nock": "^13.3.3",
     "typescript": "^5.0.2"
   }
