@@ -33,7 +33,7 @@ jobs:
         env:
           CYPRESS_DOWNLOAD_MIRROR: https://storage.googleapis.com/currents-cy
         run: |
-          npx cypress install --force
+          yarn run cypress install --force
           yarn install
           
 
