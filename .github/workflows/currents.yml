@@ -16,13 +16,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Install Currents
-      - name: Install dependencies
-        env:
-          CYPRESS_DOWNLOAD_MIRROR: https://storage.googleapis.com/currents-cy
-        run: |
-          npm install
-          npx cypress install --force
+      # # Install Currents
+      # - name: Install dependencies
+      #   env:
+      #     CYPRESS_DOWNLOAD_MIRROR: https://storage.googleapis.com/currents-cy
+      #   run: |
+      #     npm install
+      #     npx cypress install --force
 
       # Run all Cypress tests
       - name: Run Cypress on Currents.dev
