@@ -1,0 +1,19 @@
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Determine PR status
+        id: pr-status
+        run: |
+          if [ "${{ github.event.pull_request.draft }}" = "true" ]; then
+            echo "PR_STATUS=draft" >> $GITHUB_ENV
+          else
+            echo "PR_STATUS=ready_for_review" >> $GITHUB_ENV
+          fi
