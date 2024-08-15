@@ -13,6 +13,7 @@ context("Mark all as completed", function () {
   });
 
   it("should allow me to mark all items as completed", function () {
+    cy.contains("Sorry, something went wrong").should('not.exist')
     // complete all todos
     // we use 'check' instead of 'click'
     // because that indicates our intention much clearer
